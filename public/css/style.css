@@ -1,0 +1,125 @@
+body{
+    font-family: "Gill Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container{
+    flex: 1;
+}
+
+.navbar{
+    height: 5rem;
+    background-color: white;
+}
+
+.fa-hotel{
+    color: #ff385c;
+    font-size: 2rem;
+}
+
+.nav-link{
+    color: #332 !important;
+}
+
+.f-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 10rem;
+    align-items: center;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+.f-info-links{
+    width: 100%;
+}
+
+.f-info-socials{
+    width: 100%;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.f-info-links a{
+    text-decoration: none;
+    color: #222;
+}
+
+.f-info-links a:hover{
+    text-decoration: underline;
+}
+
+.card{
+    border: none !important;
+    margin-bottom: 3rem;
+    overflow: hidden; /* Ensures the zoomed image stays inside the card */
+    position: relative;
+    object-fit: cover;
+}
+
+.listing-link{
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.index-img {
+    width: 100%;
+    height: 12rem; /* or your preferred height */
+    object-fit: cover !important;
+    border-radius: 1rem !important;
+    position: relative;
+    /* z-index: 1; */
+    transition: transform 0.3s ease !important;
+}
+
+.card-body{
+    padding: 0 !important;
+}
+
+.card-text{
+    font-weight: 400;
+}
+
+.listing-link{
+    text-decoration: none;
+    color: #222;
+}
+
+.index-img:hover{
+    transform: scale(1.1) !important;
+}
+
+.add-btn{
+    background-color: #ff385c !important;
+    border: none !important;
+    border-radius: 0.5rem !important;
+    padding: 0.5rem 1rem !important;
+    font-size: 1rem !important;
+    transition: background-color 0.3s ease !important;
+}
+
+.add-btn:hover{
+    background-color: #e63946 !important;
+}
+
+/* show-img */
+
+.show-img{
+    object-fit: cover !important;
+    height: 30vh;
+    border-radius: 1rem !important;
+}
+
+.btns{
+    display: flex;
+}
+
+.show-card{
+    padding-left: 0;
+    padding-right: 0;
+}

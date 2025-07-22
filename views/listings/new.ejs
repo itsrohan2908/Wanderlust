@@ -1,0 +1,64 @@
+<% layout('/layouts/boilerplate') %>
+
+<body>
+    
+    <div class="row">
+        <div class="col-6 offset-3">
+    <form action="/listings" method="POST" novalidate class="needs-validation">
+
+        <br><br>
+        <h1>Create New Listing</h1>
+        <br><br>
+
+        <div class="mb-1">
+        <label for="title" class="form-label">Title</label>
+        <input type="text" id="title" name="listing[title]" placeholder="Title" class="form-control" required>
+        </div>
+        <div class="invalid-feedback">Please provide a title.</div>
+        <br>
+
+        <div class="mb-1">
+        <label for="description" class="form-label">Description</label>
+        <textarea id="description" name="listing[description]" placeholder="Description" class="form-control" required></textarea>
+        </div>
+        <div class="invalid-feedback">Please provide a description.</div>
+        <br>
+
+        <div class="mb-1">
+        <label for="image" class="form-label">Image URL</label>
+        <input type="text" id="image" name="listing[image][url]" placeholder="Image URL" class="form-control">
+        </div>
+        <br>
+
+        <div class="row">
+
+        <div class="mb-1 col-md-5">
+        <label for="price" class="form-label">Price</label>
+        <input type="number" id="price" name="listing[price]" placeholder="Price" class="form-control" required>
+        <div class="invalid-feedback">Please provide a price</div>
+        </div>
+
+        <div class="mb-1 col-md-7">
+        <label for="country" class="form-label">Country</label>
+        <input type="text" id="country" name="listing[country]" placeholder="Country" required class="form-control" required>
+        <div class="invalid-feedback">Please provide a country</div>
+        </div>
+        <br>
+
+        </div>
+        <br>
+
+        <div class="mb-1">
+        <label for="location" class="form-label">Location</label>
+        <input type="text" id="location" name="listing[location]" placeholder="Location" required class="form-control" required>
+        <div class="invalid-feedback">Please provide a location</div>
+        </div>
+        <br><br>
+
+        <button type="submit" class="btn btn-primary add-btn">Create Listing</button>
+
+        <br><br><br>
+    </form>
+    </div>
+</div>
+</body>
